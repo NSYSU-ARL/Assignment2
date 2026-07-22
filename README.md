@@ -1,4 +1,4 @@
-# nsysu_drone
+# NSYSU Drone (nsysu_drone)
 
 A quadrotor simulation package for ROS 2 + Gazebo Classic, derived from [tum_simulator](http://wiki.ros.org/tum_simulator).
 
