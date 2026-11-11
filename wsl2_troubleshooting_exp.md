@@ -1,6 +1,7 @@
 ## Distro Setup and Tested Environment
-- OS: Windows 11 25H2
+- OS: Windows 11 25H2 (via wsl2)
 - GPU: RTX 5060
+- CPU: intel i5 14th with UHD graphics
 
 > [!NOTE]
 > If you have not installed the distro on Windows yet, run the following command in PowerShell:
