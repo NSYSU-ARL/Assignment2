@@ -32,3 +32,21 @@ in this tutorial we would use the **Lyrical Luth**  as demo example.
 > [!CAUTION]
 > install the wrong ros distro who dont support the **EXACT** version may lead to compatability issue.
 ### getting started
+run the following script to setup and install the dependency and the enviroment
+```bash
+locale  # check for UTF-8
+
+sudo apt update && sudo apt install locales
+sudo locale-gen en_US en_US.UTF-8
+sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+locale  # verify settings
+sudo apt install software-properties-common
+sudo add-apt-repository universe
+sudo apt install ros-humble-desktop
+sudo apt install ros-dev-tools
+source /opt/ros/humble/setup.bash
+
+```
+
