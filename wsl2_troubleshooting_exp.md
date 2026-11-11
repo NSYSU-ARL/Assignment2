@@ -144,8 +144,8 @@ ros2 launch nsysu_drone_bringup nsysu_drone_bringup.launch.py
 This is the RViz program, which represents the sensor data received from the drone.
 
 ---
+<img width="958" height="508" alt="image" src="https://github.com/user-attachments/assets/bc2ac546-81f7-4232-bf33-5502d22e4948" />
 
-<img width="958" height="508" alt="image" src="https://github.com/user-attachments/assets/b2aa1943-651a-4988-9c47-a589481f39a3" />
 
 This is the Gazebo Classic view.
 
