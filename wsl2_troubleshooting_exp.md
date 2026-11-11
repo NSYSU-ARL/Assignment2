@@ -127,7 +127,7 @@ build  Dockerfile  install  LICENSE  log  README.md  run_docker.sh  src
 
 - `install` is the workspace used by the ROS 2 system.
 
-Activate the build:
+Activate the workspace:
 
 ```bash
 source install/setup.bash
@@ -181,4 +181,5 @@ OpenGL renderer string: D3D12 (Intel(R) UHD Graphics)
 > echo "export QT_X11_NO_MITSHM=1" >> ~/.bashrc
 > source ~/.bashrc
 > ```
+## common pitfall on wsl2
 
