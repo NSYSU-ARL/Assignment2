@@ -28,4 +28,6 @@ Release:        26.04
 Codename:       resolute
 ```
 in this tutorial we would use the **Lyrical Luth**  as demo example.
+> [!CAUTION]
+> install the wrong ros distro who dont support the **EXACT** version may lead to compatability issue.
 ### getting started
