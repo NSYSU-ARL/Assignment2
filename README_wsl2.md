@@ -1,11 +1,12 @@
 ## Distro Setup and tested enviroment
 - OS : win11 25H2
 - GPU : RTX5060
-- 
-if you havent install the distro on windows , run the following command in powershell to install.
-```bash
-wsl --install -d Ubuntu-22.04
-```
+
+> [!NOTE]
+> if you havent install the distro on windows , run the following command in powershell to install.
+> ```bash
+> wsl --install -d Ubuntu-22.04
+> ```
 ## install ROS2
 the following is the summary of the docs 
 https://www.ros.org/blog/getting-started/#
