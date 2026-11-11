@@ -124,15 +124,25 @@ if the FPS is extreme poor ,consider inspect the log to verify if the view is re
 ```bash
 sudo apt install mesa-utils
 ```
+
 install the tools to inspect the logs of the rendering component
 
 run the log inspector script as follows
-```bash
-$ glxinfo -B | grep -i "renderer"
-Extended renderer info (GLX_MESA_query_renderer):
-OpenGL renderer string: D3D12 (Intel(R) UHD Graphics)
+ ```bash
+ $ glxinfo -B | grep -i "renderer"
+ Extended renderer info (GLX_MESA_query_renderer):
+ OpenGL renderer string: D3D12 (Intel(R) UHD Graphics)
 ```
-if the grepped text include the `llvmpipe (LLVM 15.0.7, 256 bits)` , which means the fallback to the cpu.
+>  [!IMPORTANT]
+> if the grepped text include the `llvmpipe (LLVM 15.0.7, 256 bits)` , which means the fallback to the cpu.
 
-Unfortunately , I failed to reprocude the buggy enviroment.
+> [!NOTE]
+>Unfortunately , I failed to reprocude the buggy enviroment where the renderer failback to the cpu simulation .
+>however , the following enviroment variable can still be the refernece 
+>```bash
+>echo "export GALLIUM_DRIVER=d3d12" >> ~/.bashrc
+>echo "export QT_X11_NO_MITSHM=1" >> ~/.bashrc
+>source ~/.bashrc
+> ```
+
 
