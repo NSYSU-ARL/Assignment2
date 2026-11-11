@@ -3,6 +3,9 @@
 A quadrotor simulation package for ROS 2 + Gazebo Classic, derived from [tum_simulator](http://wiki.ros.org/tum_simulator).
 
 This version is maintained at National Sun Yat-sen University (NSYSU) and ships with a self-contained Docker workflow that runs the whole simulator (Gazebo + RViz + teleop) inside a container, with 3D rendering accelerated by GPUs and the GUI delivered to the user over VNC. It is designed for headless servers accessed via SSH, so users do not need a local X server or X11 forwarding.
+> [!TIP]
+> for the `wsl2` user , the docker depolyment scheam may lead to performance degrade issue since the renderer can't find the appropriate driver to access the GPU or other equivilent graphic hardware acceleration.
+> if you encounter the problem , see `README_wsl2.md` for more troubleshooting info.
 
 # Requirements
 
