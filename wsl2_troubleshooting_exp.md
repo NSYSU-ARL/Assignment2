@@ -49,6 +49,8 @@ In this tutorial, we will use the ROS 2 Humble distribution as the example.
 Official installation guide:
 https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debs.html
 
+The following is the summary and the experience on troubleshooting and pitfalls.
+
 Run the following script to set up the required dependencies and environment:
 
 ```bash
