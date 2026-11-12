@@ -3,6 +3,8 @@
 A quadrotor simulation package for ROS 2 + Gazebo Classic, derived from [tum_simulator](http://wiki.ros.org/tum_simulator).
 
 This version is maintained at National Sun Yat-sen University (NSYSU) and ships with a self-contained Docker workflow that runs the whole simulator (Gazebo + RViz + teleop) inside a container, with 3D rendering accelerated by GPUs and the GUI delivered to the user over VNC. It is designed for headless servers accessed via SSH, so users do not need a local X server or X11 forwarding.
+> [!TIP]
+> If you are running this project on WSL2, the Docker-based workflow may occasionally run into GPU or OpenGL rendering issues because the container may not be able to access the host GPU or equivalent hardware acceleration cleanly. If you encounter display, rendering, or performance problems, see [wsl2_troubleshooting_exp.md](./wsl2_troubleshooting_exp.md) for troubleshooting notes and setup guidance.
 
 # Requirements
 
@@ -107,7 +109,7 @@ launch_drone
 vglrun ros2 launch nsysu_drone_bringup nsysu_drone_bringup.launch.py
 ```
 
-- `vglrun` intercepts OpenGL calls and routes them to the NVIDIA GPU for hardware-accelerated rendering. **Always prefix GUI ROS commands with `vglrun`** — running Gazebo or RViz without it will fail with GLX errors.
+- `vglrun` intercepts OpenGL calls and routes them to the NVIDIA GPU for hardware-accelerated rendering. **Always prefix GUI ROS commands with `vglrun`** — running Gazebo or RViz without it will fail unless the container is set up with a proper GPU-backed display.
 
 - Use teleop window to move the drone.
 
